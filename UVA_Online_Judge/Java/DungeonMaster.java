@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package dungeon.master;
 
 import java.io.BufferedReader;
@@ -63,21 +58,14 @@ class Reader {
     static BufferedReader reader;
     static StringTokenizer tokenizer;
 
-    /**
-     * call this method to initialize reader for InputStream
-     */
     static void init(InputStream input) {
         reader = new BufferedReader(
                 new InputStreamReader(input));
         tokenizer = new StringTokenizer("");
     }
 
-    /**
-     * get next word
-     */
     static String next() throws IOException {
         while (!tokenizer.hasMoreTokens()) {
-//TODO add check for eof if necessary
             tokenizer = new StringTokenizer(
                     reader.readLine());
         }

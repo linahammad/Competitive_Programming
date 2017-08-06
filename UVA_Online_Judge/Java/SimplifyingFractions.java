@@ -27,6 +27,7 @@ public class SimplifyingFractions {
         testCase = sc.nextInt();
         str = sc.nextLine();
         currentTestCase = 0;
+		
         while (currentTestCase < testCase) {
             str = sc.nextLine();
             divisonIndex = str.indexOf('/');

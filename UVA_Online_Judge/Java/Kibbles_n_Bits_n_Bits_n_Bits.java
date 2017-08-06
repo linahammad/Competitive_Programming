@@ -38,7 +38,6 @@ public class Kibbles_n_Bits_n_Bits_n_Bits {
             }
 
             if (op.equals("+")) {
-
                 System.out.println(str1 + h1.toString(2) + " " + op + " " + str2 + h2.toString(2) + " = " + (h1.add(h2)).toString(10));
 
             } else {

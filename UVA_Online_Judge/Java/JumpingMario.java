@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package jumpingmario;
 
 import java.io.BufferedReader;
@@ -42,12 +37,7 @@ public class JumpingMario {
     }
 }
 
-/**
- * Class for buffered reading int and double values
- */
-/**
- * http://www.cpe.ku.ac.th/~jim/java-io.html
- */
+
 class Reader {
 
     static BufferedReader reader;
@@ -61,12 +51,8 @@ class Reader {
         tokenizer = new StringTokenizer("");
     }
 
-    /**
-     * get next word
-     */
     static String next() throws IOException {
         while (!tokenizer.hasMoreTokens()) {
-            //TODO add check for eof if necessary  
             tokenizer = new StringTokenizer(reader.readLine());
         }
         return tokenizer.nextToken();
